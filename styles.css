@@ -190,7 +190,7 @@ h4{
   margin-left: 30px;
   margin-top: 175px;
   background-color: #FFFFFF;
-  width: 25em;
+  width: 27.5em;
   height: 15em;
   z-index: 1;
   position: relative;
@@ -213,8 +213,8 @@ h4{
 }
 
 .contact-photo{
-  width: 60%;
-  height: 60%;
+  min-width: 60%;
+  max-height: 60%;
   z-index: 0;
   position: absolute;
   right: 5%;
