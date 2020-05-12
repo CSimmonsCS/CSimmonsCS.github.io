@@ -241,3 +241,11 @@ a:hover{
   right: 5%;
   bottom: -380%;
 }
+
+.endnote{
+  font-size: 12px;
+  color: #000000;
+  margin-top: 150px;
+  position: absolute;
+  right: 50px;
+}

@@ -178,6 +178,9 @@
                 </div>
               </div>
               <img class="contact-photo" src="images/creek.jpg" alt="beach photo">
+              <div class="endnote">
+                "Website built by Christian Simmons"
+              </div>
             </div>
           </div>
 
@@ -192,10 +195,45 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
-      $(".menu").click(function () {
+      $(".right-side").on("scroll", onScroll);
+
+      var currentPos = $('.right-side').offset().top
+      $(".menu").click(function (e) {
+
         $(this).addClass("active");
         $(".menu").not(this).removeClass("active");
+
+        var target = $(this.getAttribute('href'));
+        var top = $(document).scrollTop()
+        // console.log(target);
+        if( target.length ) {
+            e.preventDefault();
+            // offset from top of right-side container to element
+            var scrollOffset = $(target)[0].offsetTop - $(".right-side")[0].offsetTop;
+
+            // console.log(scrollOffset);
+            $('.right-side').animate({
+                scrollTop: scrollOffset
+            }, 500);
+        }
       });
     });
+
+    function onScroll(event){
+    var scrollPos = $('.right-side').scrollTop();
+    // console.log(scrollPos);
+    $('.menu ul li a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        console.log('test');
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('.menu ul li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+      });
+    }
   </script>
 </html>
