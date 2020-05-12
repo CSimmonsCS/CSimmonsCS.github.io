@@ -1,450 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
+    <meta charset="utf-8">
     <title>Christian Simmons</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/font-awesome-all.min.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="./styles.css">
   </head>
-  <body class="is-preload landing">
-    <div id="page-wrapper">
-      <!-- Header -->
-      <header id="header">
-        <h1 id="logo">Portfolio</h1>
-        <nav id="nav">
-          <ul>
-            <!-- <li><a href="index.html">Home</a></li> -->
-            <li>
-              <a>Social Media</a>
-              <ul>
-                <li>
-                  <a href="www.linkedin.com/in/csimmonscs" target="_blank"
-                    >LinkedIn <i class="fab fa-linkedin"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="www.github.com/csimmonscs" target="_blank"
-                    >GitHub <i class="fab fa-github" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <!-- <li><a href="#">Another Social</a></li> -->
-                <!-- <li>
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Option 1</a></li>
-											<li><a href="#">Option 2</a></li>
-											<li><a href="#">Option 3</a></li>
-											<li><a href="#">Option 4</a></li>
-										</ul>
-									</li> -->
-              </ul>
-            </li>
-            <!-- <li><a href="elements.html">Elements</a></li> -->
-            <!-- <li><a href="#" class="button primary">Sign Up</a></li> -->
-          </ul>
-        </nav>
-      </header>
+  <body>
 
-      <!-- Banner -->
-      <section id="banner">
-        <div class="content">
-          <header>
-            <h2>Christian Simmons</h2>
-            <p>
-              415-533-5813<br />
-              CSimmonsCS@gmail.com<br />
-              San Francisco, CA
-            </p>
-          </header>
-          <span class="image"><img src="images/head.jpeg" alt=""/></span>
-        </div>
-        <a href="#one" class="goto-next scrolly">Next</a>
-      </section>
+    <div class="container-fluid">
+      <div class="row">
 
-      <!-- One -->
-      <section id="one" class="spotlight style1 bottom">
-        <span class="image fit main"
-          ><img src="images/Astar2.png" alt=""
-        /></span>
-        <div class="content">
-          <div class="container">
-            <div class="row">
-              <div class="col-4 col-12-medium">
-                <header>
-                  <h2>A* Pathfinding Visualizer</h2>
-                  <p>
-                    Built in C# & Unity
-                  </p>
-                  <a
-                    href="https://github.com/CSimmonsCS/A-PathfinderVisualizerUnity"
-                    class="button"
-                    target="_blank"
-                  >
-                    <i class="fab fa-github" aria-hidden="true"></i
-                  ></a>
-                </header>
-              </div>
-              <div class="col-4 col-12-medium">
-                <p>
-                  This project uses C# and Unity to build an A* Pathfinding
-                  Visualizer. The start node begins at the bottom left-hand size
-                  of the application. The pathfinder will find the quickest
-                  route to a point where the user clicks on the the gridmap,
-                  which is based on the hCost, gCost, & fCost.
-                </p>
-              </div>
-
-              <div class="col-4 col-12-medium">
-                <p>
-                  The user can build walls to create obstacles for the
-                  pathfinder by clicking the right-mouse button. By repeatedly
-                  pressing the 'spacebar' button, the application reads each
-                  node one-by-one and evaluates the path. Each green-node notes
-                  the current node. A red-node notes a node that has already
-                  been read. A blue-node notes a node that is to be read. After
-                  calculating the path, the application shows the path using all
-                  green-nodes.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a href="#two" class="goto-next scrolly">Next</a>
-      </section>
-
-      <!-- Two -->
-      <section id="two" class="spotlight style2 right">
-        <span class="image fit main"
-          ><img src="images/heatmap.png" alt=""
-        /></span>
-        <div class="content">
-          <header>
-            <h2>Heatmap Grid</h2>
-            <p>Built in C# & Unity</p>
-          </header>
-          <p>
-            This project uses C# and Unity to build from the GridMap built in a
-            previous repository. Using an integer range (0-100), when a user
-            clicks on a point on the grid map, "heat" is cascaded down from the
-            center point outward. Hot is noted as green (100) & cold noted as
-            red (0). The color gradients are dependent on the integer between 0
-            - 100. This project can be useful in ways, such as, mapping users
-            distance covered & frequency, velocity-resistance, and many other
-            analytical uses.
-          </p>
-          <ul class="actions">
-            <li>
-              <a
-                href="https://github.com/CSimmonsCS/HeatMapUnity"
-                class="button"
-                target="_blank"
-              >
-                <i class="fab fa-github" aria-hidden="true"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <a href="#three" class="goto-next scrolly">Next</a>
-      </section>
-
-      <!-- Three -->
-      <section id="three" class="spotlight style3 left">
-        <span class="image fit main bottom"
-          ><img src="images/react-chat-room.png" alt=""
-        /></span>
-        <div class="content">
-          <header>
-            <h2>React Chat Room</h2>
-            <p>
-              Built with ReactJS, JavaScript, CSS, & <br />Firebase's Real-Time
-              Database
-            </p>
-          </header>
-          <p>
-            React Chat Room is a CRUD application where users communicate with
-            each other via instant message. Utilizes user messaging,
-            authentication, account/password management, social media logins,
-            and roles/permissions. Users may sign-in using their e-mail, Google,
-            Facebook, or Twitter accounts. The Home page holds the chat room
-            where a user may send/edit/delete a message and view messages sent
-            by other users. The Account page provides a user a way to link
-            social accounts or change their password. Admin page (Admin only)
-            holds information on each user who has signed up.
-          </p>
-          <ul class="actions">
-            <li>
-              <a
-                href="https://github.com/CSimmonsCS/react-chat-room"
-                class="button"
-                target="_blank"
-                ><i class="fab fa-github" aria-hidden="true"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://road-to-react-firebase-789d7.firebaseapp.com/"
-                class="button"
-                target="_blank"
-                >View app here</i
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <a href="#three-five" class="goto-next scrolly">Next</a>
-      </section>
-
-      <!-- Three.5 -->
-      <section id="three-five" class="spotlight style2 right">
-        <span class="image fit main"><img src="images/hdmz.png" alt=""/></span>
-        <div class="content">
-          <header>
-            <h2>HDMZ Website Rebuild</h2>
-            <p>Built in HTML, CSS, Javascript, & PHP</p>
-          </header>
-          <p>
-            I was the lead front-end developer at HDMZ for their's corporate
-            website HDMZ is an agency that provides healthcare and science
-            brands with an integrated approach to solving complex communications
-            challenges.
-          </p>
-          <ul class="actions">
-            <li>
-              <a href="https://www.hdmz.com" class="button" target="_blank"
-                >View website here</a
-              >
-            </li>
-          </ul>
-        </div>
-        <a href="#three-seven-five" class="goto-next scrolly">Next</a>
-      </section>
-
-      <!-- Three.75 -->
-      <!-- Three.5 -->
-      <section id="three-seven-five" class="spotlight style2 right">
-        <span class="image fit main"
-          ><img src="images/theravance.png" alt=""
-        /></span>
-        <div class="content">
-          <header>
-            <h2>Theravance Website Rebuild</h2>
-            <p>Built in HTML, CSS, Javascript, & PHP</p>
-          </header>
-          <p>
-            I was the lead front-end developer at HDMZ for Theravance
-            Biopharma's website rebuild, who is a diversified biopharmaceutical
-            company primarily focused on the discovery, development and
-            commercialization of organ-selective medicines.
-          </p>
-          <ul class="actions">
-            <li>
-              <a
-                href="https://www.theravance.com"
-                class="button"
-                target="_blank"
-                >View website here</a
-              >
-            </li>
-          </ul>
-        </div>
-        <a href="#four" class="goto-next scrolly">Next</a>
-      </section>
-
-      <!-- Four -->
-      <section id="four" class="wrapper style1 special fade-up">
-        <div class="container">
-          <header class="major">
-            <h2>About</h2>
-            <p></p>
-          </header>
-          <div class="box alt">
-            <div class="row gtr-uniform">
-              <section class="col-6 col-6-medium col-12-xsmall">
-                <!-- <span class="icon solid alt major fa-comment"></span> -->
-                <span class="icon solid alt major fa-paper-plane"></span>
-                <h3>Capabilities</h3>
-                <p>
-                  Front-end Development<br />
-                  Cross-Platform Development<br / /> Game Development<br />
-                  Responsive Design<br />
-                  Wireframing<br />
-                  Prototyping<br />
-                  Accessibility<br />
-                  Browser Compatibility<br />
-                  Graphic Design<br />
-                  Content Management<br />
-                </p>
-              </section>
-
-              <section class="col-6 col-6-medium col-12-xsmall">
-                <!-- <span class="icon solid alt major fa-chart-area"></span> -->
-                <span class="icon solid alt major fa-file"></span>
-                <h3>Technical Experience</h3>
-                <p style="font-size: 18px; font-weight: 600">
-                  C#<br />
-                  React & Redux<br />
-                  React Native<br />
-                  Javascript<br />
-                  CSS/LESS/SCSS<br />
-                  PHP <br />
-                  Node.js<br />
-                  Java<br />
-                  C++<br />
-                  Firebase<br />
-                  SQL<br />
-                  Docker<br />
-                  Git<br />
-                </p>
-              </section>
-
-              <!-- <center> -->
-              <!-- <section class="col-4 col-6-medium col-12-xsmall">
-                <span class="icon solid alt major fa-comment"></span>
-                <h3>Soft Skills</h3>
-                <p>
-                  Game Development<br />
-                  Front-end Development<br />
-                  Responsive Design<br />
-                  Wireframing<br />
-                  Prototyping<br />
-                  Accessibility<br />
-                  Browser Compatibility<br />
-                </p>
-              </section> -->
-              <!-- </center> -->
-              <!-- <section class="col-4 col-6-medium col-12-xsmall">
-                <span class="icon solid alt major fa-flask"></span>
-                <h3>CSS/LESS/SCSS</h3>
-                <p>
-                  Feugiat accumsan lorem eu ac lorem amet accumsan donec.
-                  Blandit orci porttitor.
-                </p>
-              </section>
-              <section class="col-4 col-6-medium col-12-xsmall">
-                <span class="icon solid alt major fa-paper-plane"></span>
-                <h3>React/Redux</h3>
-                <p>
-                  Feugiat accumsan lorem eu ac lorem amet accumsan donec.
-                  Blandit orci porttitor.
-                </p>
-              </section>
-              <section class="col-4 col-6-medium col-12-xsmall">
-                <span class="icon solid alt major fa-file"></span>
-                <h3>PHP</h3>
-                <p>
-                  Feugiat accumsan lorem eu ac lorem amet accumsan donec.
-                  Blandit orci porttitor.
-                </p>
-              </section>
-              <section class="col-4 col-6-medium col-12-xsmall">
-                <span class="icon solid alt major fa-lock"></span>
-                <h3>Git</h3>
-                <p>
-                  Feugiat accumsan lorem eu ac lorem amet accumsan donec.
-                  Blandit orci porttitor.
-                </p>
-              </section> -->
-            </div>
-          </div>
-          <footer class="major">
-            <ul class="actions special">
-              <li>
-                <a href="www.github.com/csimmonscs" class="button"
-                  >Github
-                  <i class="fab fa-github" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="www.linkedin.com/in/csimmonscs" class="button"
-                  >LinkedIn
-                  <i class="fab fa-linkedin" aria-hidden="true"></i>
-                </a>
-              </li>
+        <!-- SIDE MENU -->
+        <div class="col-sm-4 fixed">
+          <div class="side-menu">
+            <ul>
+              <li>Home</li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
-          </footer>
+          </div>
         </div>
-      </section>
 
-      <!-- Five -->
-      <!-- <section id="five" class="wrapper style2 special fade">
-        <div class="container">
-          <header>
-            <h2>Magna faucibus lorem diam</h2>
-            <p>
-              Ante metus praesent faucibus ante integer id accumsan eleifend
-            </p>
-          </header>
-          <form method="post" action="#" class="cta">
-            <div class="row gtr-uniform gtr-50">
-              <div class="col-8 col-12-xsmall">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Your Email Address"
-                />
+        <!-- RIGHT SIDE -->
+        <div class="col-sm-8 right-side">
+
+          <!-- Home Page -->
+          <div class="home">
+            <div class="row justify-content-center content">
+                <img class="headshot" src="images/head.jpg" alt="Headshot of Christian Simmons">
+                <div class="home-text row justify-content-center">
+                  <h1 class="line-before">CHRISTIAN SIMMONS</h1>
+                  <h3>Software Engineer | Web Developer</h3>
+                </div>
+            </div>
+          </div>
+
+          <!-- About -->
+          <div id="about" class="about">
+            <div class="justify-content-center content">
+              <h2 class="line-before">ABOUT</h2>
+              <div class="about-bg">
+                <div class="about-text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Aliquet eget sit amet tellus cras adipiscing enim eu turpis.
+                    Quis auctor elit sed vulputate mi sit.
+                    Massa ultricies mi quis hendrerit dolor magna eget.
+                    Proin gravida hendrerit lectus a.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Aliquet eget sit amet tellus cras adipiscing enim eu turpis.
+                    Quis auctor elit sed vulputate mi sit.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
               </div>
-              <div class="col-4 col-12-xsmall">
-                <input type="submit" value="Get Started" class="fit primary" />
+              <img class="about-photo" src="images/beach.jpg" alt="beach photo">
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div id="skills" class="skills">
+            <div class="justify-content-center content">
+              <h2 class="line-before">SKILLS</h2>
+
+              <!-- row 1 -->
+              <div class="row justify-content-between">
+
+                <div class="skills-bg skills-bg-left">
+                  <div class="skills-text">
+                    <h4>Front-End</h4>
+                    <ul>
+                      <li>JavaScript</li>
+                      <li>jQuery</li>
+                      <li>React</li>
+                      <li>Redux</li>
+                      <li>HTML</li>
+                      <li>CSS/LESS/SASS</li>
+                      <li>Material UI</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="skills-bg skills-bg-right">
+                  <div class="skills-text">
+                    <h4>Back-End</h4>
+                    <ul>
+                      <li>Python</li>
+                      <li>Django</li>
+                      <li>Selenium</li>
+                      <li>PHP</li>
+                      <li>Firebase</li>
+                      <li>Docker</li>
+                      <li>C#</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- row 2 -->
+              <div class="row justify-content-end">
+                <div class="skills-bg skills-bg-right">
+                  <div class="skills-text">
+                    <h4>Other Skills</h4>
+                    <ul>
+                      <li>Git</li>
+                      <li>QA Testing</li>
+                      <li>Automation</li>
+                      <li>Responsive Design</li>
+                      <li>SEO</li>
+                      <li>Accessibility</li>
+                      <li>Browser Compatibility</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <img class="skills-photo" src="images/diablo.jpg" alt="beach photo">
+            </div>
+          </div>
+
+          <!-- Portfolio -->
+          <div id="portfolio" class="portfolio">
+            <div class="justify-content-center content">
+              <h2 class="line-before">Portfolio</h2>
+              <div class="about-bg">
+                <div class="about-text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Aliquet eget sit amet tellus cras adipiscing enim eu turpis.
+                    Quis auctor elit sed vulputate mi sit.
+                    Massa ultricies mi quis hendrerit dolor magna eget.
+                    Proin gravida hendrerit lectus a.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Aliquet eget sit amet tellus cras adipiscing enim eu turpis.
+                    Quis auctor elit sed vulputate mi sit.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
               </div>
             </div>
-          </form>
+          </div>
+
+          <!-- Contact -->
+          <div id="contact" class="contact">
+            <div class="justify-content-center content">
+              <h2 class="line-before">CONTACT</h2>
+              <div class="contact-bg">
+                <div class="contact-text">
+                  <ul>
+                    <li>CSimmonsCS@gmail.com</li>
+                    <li><a href="http://www.github.com/csimmonscs" target="_blank">GitHub</a></li>
+                    <li><a href="http://www.linkedin.com/in/csimmonscs" target="_blank">LinkedIn</a></li>
+                    <li><a href="http://www.instagram.com/cdotdev" target="_blank">Instagram</a></li>
+                  </ul>
+                </div>
+              </div>
+              <img class="contact-photo" src="images/creek.jpg" alt="beach photo">
+            </div>
+          </div>
+
+
         </div>
-      </section> -->
-
-      <!-- Footer -->
-      <!-- <footer id="footer">
-        <ul class="icons">
-          <li>
-            <a href="#" class="icon brands alt fa-twitter"
-              ><span class="label">Twitter</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands alt fa-facebook-f"
-              ><span class="label">Facebook</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands alt fa-linkedin-in"
-              ><span class="label">LinkedIn</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands alt fa-instagram"
-              ><span class="label">Instagram</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands alt fa-github"
-              ><span class="label">GitHub</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon solid alt fa-envelope"
-              ><span class="label">Email</span></a
-            >
-          </li>
-        </ul>
-        <ul class="copyright">
-          <li>&copy; Untitled. All rights reserved.</li>
-          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
-      </footer> -->
+        <!-- end right side -->
+      </div>
     </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
   </body>
 </html>
