@@ -19,11 +19,11 @@
         <div class="col-sm-4 fixed">
           <div class="side-menu">
             <ul>
-              <li>Home</li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a class="menu" href="#home">Home</a></li>
+              <li><a class="menu" href="#about">About</a></li>
+              <li><a class="menu" href="#skills">Skills</a></li>
+              <li><a class="menu" href="#portfolio">Portfolio</a></li>
+              <li><a class="menu" href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -32,7 +32,7 @@
         <div class="col-sm-8 right-side">
 
           <!-- Home Page -->
-          <div class="home">
+          <div id="home" class="home">
             <div class="row justify-content-center content">
                 <img class="headshot" src="images/head.jpg" alt="Headshot of Christian Simmons">
                 <div class="home-text row justify-content-center">
@@ -186,5 +186,16 @@
         <!-- end right side -->
       </div>
     </div>
+
+
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".menu").click(function () {
+        $(this).addClass("active");
+        $(".menu").not(this).removeClass("active");
+      });
+    });
+  </script>
 </html>
