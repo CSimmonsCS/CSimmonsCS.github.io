@@ -96,12 +96,14 @@ a:hover{
   border: 10px solid;
   border-color: #39FF14;
   margin: 100px 0 100px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .home-text{
   background-color: #FFFFFF;
   margin: 0 30px;
   padding: 20px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .line-before::before{
@@ -114,20 +116,6 @@ a:hover{
 
 /* about page */
 
-.about-bg{
-  margin-left: 30px;
-  margin-top: 25px;
-  background-color: #FFFFFF;
-  width: 500px;
-  height: 391.3px;
-  z-index: 1;
-  position: relative;
-}
-
-.about-text{
-  padding: 30px;
-}
-
 .about-photo{
   width: 450px;
   height: 450px;
@@ -138,11 +126,12 @@ a:hover{
 }
 
 .about-bg{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-left: 30px;
   margin-top: 25px;
   background-color: #FFFFFF;
   width: 500px;
-  height: 391.3px;
+  height: 531.3px;
   z-index: 1;
   position: relative;
 }
@@ -154,6 +143,7 @@ a:hover{
 /* skills page */
 
 .skills-bg{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   /* margin-left: 30px; */
   margin-top: 15px;
   background-color: #FFFFFF;
@@ -207,6 +197,7 @@ a:hover{
   height: 15em;
   z-index: 1;
   position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contact-text{
